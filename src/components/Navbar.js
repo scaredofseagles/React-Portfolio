@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
+import {NavLink} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           Navbar
         </a>
         <button
@@ -22,14 +23,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Projects
-              </a>
+              {/* <NavLink className="nav-link" to="/aboutMe">
+                About Me
+              </NavLink> */}
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/projects">
+                Projects
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

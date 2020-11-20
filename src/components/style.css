@@ -1,8 +1,37 @@
+body{
+    background-color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, label, p, textarea, input, span{
+    color: whitesmoke;
+}
+
 li{
     list-style-type: none;
+}
+
+.card-img{
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+}
+
+.card-img-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#aboutMe{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer{
     display: flex;
     justify-content: space-evenly;
+    color: whitesmoke
 }
