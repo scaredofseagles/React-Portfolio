@@ -1,7 +1,8 @@
 import React from "react";
-import bannerImg from "./bannerImg.jpg";
+import bannerImg from "./Assets/Images/bannerImg.jpg";
 import "../components/style.css";
-import tempPic from "./tempPic.png";
+import tempPic from "./Assets/Images/tempPic.png";
+import CVDaileyKaze from './Assets/CVDaileyKaze.pdf'
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
         <div className="card-img-overlay">
           <h1 className="card-title">Hi, My Name is Dailey!</h1>
           <h3 className="card-text">Full Stack Web Developer</h3>
-          <a type="button" className="btn btn-outline-dark" href="">
+          <a type="button" className="btn btn-outline-dark" href={CVDaileyKaze} target="_blank">
             Resume <i class="fas fa-file-download"></i>
           </a>
         </div>
