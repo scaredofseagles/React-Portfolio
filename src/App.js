@@ -8,8 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div className="container-fluid">
+      
         <Switch>
           <Route path='/projects'>
             <Projects />
@@ -21,7 +20,6 @@ function App() {
             <About />
           </Route>
         </Switch>
-      </div>
       <Footer />
     </div>
   );

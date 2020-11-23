@@ -20,10 +20,7 @@ function Contact(){
 						<div className="btn-group">
 							<ul className="btn-group">
 								<li>
-									<a type="submit" className="primary btn btn-lg btn-primary">Send Message</a>
-								</li>
-								<li>
-									<a type="reset" className="btn btn-lg btn-danger">Clear</a>
+									<a type="submit" className="primary btn btn-lg btn-primary">Send</a>
 								</li>
 							</ul>
 						</div>

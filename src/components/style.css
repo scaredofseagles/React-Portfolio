@@ -1,19 +1,21 @@
 body{
-    background-color: #1a1a1a;
-}
-
-h1, h2, h3, h4, h5, label, p, textarea, input, span{
-    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
 }
 
 li{
     list-style-type: none;
 }
 
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .card-img{
     object-fit: cover;
     object-position: center;
-    height: 90vh;
+    height: 100vh;
+    opacity: 70%;
 }
 
 .card-img-overlay{
@@ -21,6 +23,13 @@ li{
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    z-index: 2;
 }
 
 #aboutMe{
@@ -63,8 +72,25 @@ li{
     object-fit: fill;
 }
 
+.socialIcons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-twitter:hover{
+    color: rgb(49, 162, 214);
+}
+
+.fa-github:hover{
+    color: gray;
+}
+
+.fa-linkedin:hover{
+    color: rgb(20, 115, 204);
+}
+
+
 .footer{
     display: flex;
     justify-content: space-evenly;
-    color: whitesmoke
 }

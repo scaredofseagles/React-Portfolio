@@ -1,47 +1,31 @@
 import React from "react";
 import "./style.css";
 import {NavLink} from 'react-router-dom'
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 
 function Navbar() {
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      "& > *": {
+        margin: theme.spacing(1),
+      },
+    },
+  }));
+
+  const classes = useStyles();
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Navbar
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              {/* <NavLink className="nav-link" to="/aboutMe">
-                About Me
-              </NavLink> */}
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/projects">
-                Projects
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav className={classes.root} style={{position: "absolute", top: "0px", marginRight: "0px"}}>
+      <ul className="navigation">
+        <li><NavLink to="/"><Button color="primary">Home</Button></NavLink></li>
+        <li><NavLink to="/projects"><Button color="primary">Projects</Button></NavLink></li>
+        <li><NavLink to="/about"><Button color="primary">About</Button></NavLink></li>
+        <li><NavLink to="/contact"><Button color="primary">Contact</Button></NavLink></li>
+      </ul>
     </nav>
   );
 }
 
 export default Navbar;
+
