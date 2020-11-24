@@ -1,9 +1,7 @@
 import React from "react";
 import bannerImg from "./Assets/Images/bannerImg.jpg";
 import "../components/style.css";
-import tempPic from "./Assets/Images/tempPic.png";
 import CVDaileyKaze from "./Assets/CVDaileyKaze.pdf";
-import Navbar from '../components/Navbar'
 import Contact from '../views/Contact'
 
 function Home() {
