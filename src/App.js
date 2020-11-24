@@ -1,23 +1,23 @@
 import Navbar from './components/Navbar'
-import About from './views/About'
+import Home from './views/Home'
 import Projects from './views/Projects'
-import Contact from './views/Contact'
+import About from './views/About'
 import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      
+      <Navbar/>
         <Switch>
           <Route path='/projects'>
             <Projects />
           </Route>
-          <Route path='/contact'>
-            <Contact />
+          <Route path='/about'>
+            <About />
           </Route>
           <Route path='/'>
-            <About />
+            <Home />
           </Route>
         </Switch>
       <Footer />

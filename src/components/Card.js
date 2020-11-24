@@ -2,15 +2,23 @@ import React from 'react'
 
 function Card(props){
     return(
-        <article class="card col-xl-6">
-            <img src={props.cardimg} class="img-fluid projectImg" alt="Fandomzz Project Image"/>
-            <header class="card-img-overlay projectCard">
-                <h3 class="card-title">{props.title}</h3>
-                <p class="projectText card-text">{props.info}</p>
-                <a class="deployedBtn btn btn-outline-secondary" href={props.deployed} target="_blank">See it Deployed</a>
-                <a class="repoBtn btn btn-outline-secondary" href={props.repo} target="_blank">See the Repo</a>
-            </header>
-		</article>
+        <div className="card mb-3" >
+            <div className="row g-0">
+            <div className="col-md-4">
+                <img src={props.cardimg}  className="img-fluid" alt="Project Image"/>
+            </div>
+            <div className="col-md-8">
+                <div className="card-body">
+                <h5 className="card-title">{props.title}</h5>
+                <p className="card-text">{props.info}</p>
+                <div className="btn-group">
+                    <a className="deployedBtn btn btn-outline-secondary" href={props.deployed} target="_blank">See it Deployed</a>
+                    <a className="repoBtn btn btn-outline-secondary" href={props.repo} target="_blank">See the Repo</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     )
 }
 

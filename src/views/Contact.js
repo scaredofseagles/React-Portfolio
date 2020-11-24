@@ -2,20 +2,22 @@ import React from 'react'
 
 function Contact(){
     return(
-        <div className="row">
+		<div className="container">
+			<div className="row" style={{marginTop: "5%"}}>
+				<h1 style={{marginBottom: "3%"}}>Contact Me</h1>
 				<aside className="col col-xl-8">
-					<form className="row g-3">
+					<form className="row g-3" name="contact" method="POST" data-netlify="true">
 						<div className="col-md-6">
 							<label className="form-label" >Name</label>
-							<input type="text" className="form-control" />
+							<input type="text" name="name" className="form-control" />
 						</div>
 						<div className="col-md-6">
 							<label className="form-label">Email</label>
-							<input type="text" className="form-control" />
+							<input type="text" name="email" className="form-control" />
 						</div>
 						<div className="col-md">
 							<label className="form-label">Message</label>
-							<textarea className="form-control" className="form-control" rows="6"></textarea>
+							<textarea className="form-control" name="message" className="form-control" rows="6"></textarea>
 						</div>
 						<div className="btn-group">
 							<ul className="btn-group">
@@ -57,6 +59,8 @@ function Contact(){
 					</article>
 				</aside>
 			</div>
+		</div>
+        
     )
 }
 

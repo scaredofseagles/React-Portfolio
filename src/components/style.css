@@ -1,9 +1,19 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: rgba(245, 245, 245, 0.897);
 }
 
 li{
     list-style-type: none;
+}
+
+.navbar-nav{
+	display: flex;
+	justify-content: space-around !important;
+}
+
+.container{
+    margin-top: 5%;
 }
 
 .container-fluid{
@@ -15,7 +25,7 @@ li{
     object-fit: cover;
     object-position: center;
     height: 100vh;
-    opacity: 70%;
+    opacity: 60%;
 }
 
 .card-img-overlay{
@@ -25,18 +35,41 @@ li{
     flex-flow: column wrap;
 }
 
-.navigation{
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    z-index: 2;
-}
-
 #aboutMe{
     margin-top: 5%;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.languageIcon{
+    margin: 2%;
+    display: flex;
+    align-self: flex-end;
+}
+
+.fa-html5:hover{
+	color: orange;
+}
+
+.fa-css3-alt:hover{
+	color: #007acc;
+}
+
+.fa-js-square:hover{
+	color: #ffe300;
+}
+
+.fa-node-js:hover{
+	color: green;
+}
+
+.fa-database:hover{
+	color: blue;
+}
+
+.fa-react:hover{
+	color: lightblue;
 }
 
 .col-xl-6:hover .projectImg {
@@ -47,7 +80,7 @@ li{
     opacity: 1;
 }
 
-.projectCard {
+/* .projectCard {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -70,7 +103,7 @@ li{
 .projectText {
     font-size: 12pt;
     object-fit: fill;
-}
+} */
 
 .socialIcons{
     display: flex;
