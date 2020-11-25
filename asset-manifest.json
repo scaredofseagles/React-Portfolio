@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.c20ac614.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.053070a2.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.053070a2.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.c037c180.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.c037c180.js.map",
+    "static/js/2.f85f204a.chunk.js": "/React-Portfolio/static/js/2.f85f204a.chunk.js",
+    "static/js/2.f85f204a.chunk.js.map": "/React-Portfolio/static/js/2.f85f204a.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.c20ac614.chunk.css.map": "/React-Portfolio/static/css/main.c20ac614.chunk.css.map",
+    "static/js/2.f85f204a.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.f85f204a.chunk.js.LICENSE.txt",
+    "static/media/CVDaileyKaze.4405e39a.pdf": "/React-Portfolio/static/media/CVDaileyKaze.4405e39a.pdf",
+    "static/media/bannerImg.db10db67.jpg": "/React-Portfolio/static/media/bannerImg.db10db67.jpg",
+    "static/media/burgerscreenshot.9f28b58a.png": "/React-Portfolio/static/media/burgerscreenshot.9f28b58a.png",
+    "static/media/employeedirectoryscreenshot.7dee3caa.png": "/React-Portfolio/static/media/employeedirectoryscreenshot.7dee3caa.png",
+    "static/media/fandomzscreenshot.b1cb97e1.png": "/React-Portfolio/static/media/fandomzscreenshot.b1cb97e1.png",
+    "static/media/googlebooksscreenshot.757c19cb.png": "/React-Portfolio/static/media/googlebooksscreenshot.757c19cb.png",
+    "static/media/notespnscreenshot.fe4d97ba.png": "/React-Portfolio/static/media/notespnscreenshot.fe4d97ba.png",
+    "static/media/tempPic.98eb8d11.png": "/React-Portfolio/static/media/tempPic.98eb8d11.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c037c180.js",
+    "static/js/2.f85f204a.chunk.js",
+    "static/css/main.c20ac614.chunk.css",
+    "static/js/main.053070a2.chunk.js"
+  ]
+}
