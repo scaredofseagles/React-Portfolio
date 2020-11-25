@@ -9,7 +9,7 @@ function Card(props){
             </div>
             <div className="col-md-8">
                 <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
+                <h5 className="card-title"><b>{props.title}</b></h5>
                 <p className="card-text">{props.info}</p>
                 <div className="btn-group">
                     <a className="deployedBtn btn btn-outline-secondary" href={props.deployed} target="_blank">See it Deployed</a>
