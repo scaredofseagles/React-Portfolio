@@ -7,9 +7,10 @@ li{
     list-style-type: none;
 }
 
-.navbar-nav{
-	display: flex;
-	justify-content: space-around !important;
+.navbar{
+    opacity: 100 !important;
+	/* display: flex;
+	justify-content: space-around !important; */
 }
 
 .container{
@@ -22,10 +23,13 @@ li{
 }
 
 .card-img{
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
+    background-image: url('./bannerImg.jpg');
+    /* object-fit: cover;
+    object-position: center; */
+    min-height: 100vh;
     opacity: 60%;
+    background-position: top left;
+    background-size: cover;
 }
 
 .card-img-overlay{

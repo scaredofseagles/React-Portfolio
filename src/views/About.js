@@ -1,5 +1,4 @@
 import React from "react";
-import "../components/style.css";
 import tempPic from "./Assets/Images/tempPic.png";
 import Image from 'react-bootstrap/Image'
 import CVDaileyKaze from "./Assets/CVDaileyKaze.pdf";

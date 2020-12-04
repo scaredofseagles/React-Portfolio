@@ -1,18 +1,9 @@
 import React from "react";
-import "./style.css";
 import {NavLink} from 'react-router-dom'
 
 function Navbar() {
 
   return (
-    // <nav className={classes.root} style={{position: "absolute", top: "0px", marginRight: "0px"}}>
-    //   <ul className="navigation">
-    //     <li><NavLink to="/"><Button color="primary">Home</Button></NavLink></li>
-    //     <li><NavLink to="/projects"><Button color="primary">Projects</Button></NavLink></li>
-    //     <li><NavLink to="/about"><Button color="primary">About</Button></NavLink></li>
-    //     <li><NavLink to="/contact"><Button color="primary">Contact</Button></NavLink></li>
-    //   </ul>
-    // </nav>
     <nav class="navbar navbar-expand-sm fixed-top navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">Dailey Kaze</a>
