@@ -1,23 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Contact(){
+	const [state, setState] = useState({
+		name: '',
+		email: '',
+		message: ''
+	})
+
+	function sendEmail(event){
+		event.preventDefault()
+	}
+
+	function handleInputChange(event){
+		const {name, value} = event.target
+
+
+		setState({
+			...state,
+			[name]: value
+		})
+	}
+
     return(
 		<div className="container">
 			<div className="row" style={{marginTop: "5%"}}>
 				<h1 style={{marginBottom: "3%"}}>Contact Me</h1>
 				<aside className="col col-xl-8">
-					<form className="row g-3" name="contact" method="POST" data-netlify="true">
+					<form onSubmit={sendEmail} className="row g-3" name="contact" //TODO: remove => method="POST" data-netlify="true"
+					>
 						<div className="col-md-6">
 							<label className="form-label" >Name</label>
-							<input type="text" name="name" className="form-control" />
+							<input onChange={handleInputChange} type="text" name="name"  value={state.name} className="form-control" />
 						</div>
 						<div className="col-md-6">
 							<label className="form-label">Email</label>
-							<input type="text" name="email" className="form-control" />
+							<input onChange={handleInputChange} type="text" name="email" value={state.email} className="form-control" />
 						</div>
 						<div className="col-md">
 							<label className="form-label">Message</label>
-							<textarea className="form-control" name="message" className="form-control" rows="6"></textarea>
+							<textarea onChange={handleInputChange} className="form-control" name="message" value={state.message} className="form-control" rows="6"></textarea>
 						</div>
 						<div className="btn-group">
 							<ul className="btn-group">
