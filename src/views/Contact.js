@@ -12,7 +12,6 @@ function Contact(){
 
 	function sendEmail(event){
 		event.preventDefault()
-		console.log('clicked')
 		axios
 			.post('/send', {...state})
 			.then(response =>{
@@ -26,7 +25,6 @@ function Contact(){
 
 	function handleInputChange(event){
 		const {name, value} = event.target
-
 
 		setState({
 			...state,
@@ -47,15 +45,15 @@ function Contact(){
 					<form onSubmit={sendEmail} className="row g-3" name="contact">
 						<div className="col-md-6">
 							<label className="form-label" >Name</label>
-							<input onChange={handleInputChange} type="text" name="name"  value={state.name} className="form-control" />
+							<input value={state.name} onChange={handleInputChange} type="text" name="name" className="form-control" />
 						</div>
 						<div className="col-md-6">
 							<label className="form-label">Email</label>
-							<input onChange={handleInputChange} type="text" name="email" value={state.email} className="form-control" />
+							<input value={state.email} onChange={handleInputChange} type="text" name="email" className="form-control" />
 						</div>
 						<div className="col-md">
 							<label className="form-label">Message</label>
-							<textarea onChange={handleInputChange} className="form-control" name="message" value={state.message} className="form-control" rows="6"></textarea>
+							<textarea value={state.message} onChange={handleInputChange} className="form-control" name="message" rows="6"></textarea>
 						</div>
 						<button type="submit" className="btn btn-lg btn-primary">Send</button>
 					</form>

@@ -131,3 +131,11 @@ li{
     display: flex;
     justify-content: space-evenly;
 }
+
+.success{
+    color: #0ff40f
+}
+
+.error{
+    color: #960303
+}

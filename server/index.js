@@ -11,8 +11,8 @@ const buildPath = path.join(__dirname, '..', 'build')
 app.use(express.json())
 app.use(express.static(buildPath))
 
-app.post('/send', (res, req) =>{
-    console.log(req.body)
+app.post('/send', (req, res) =>{
+    console.log('req.body received: ', req.body)
     try {
         let mailOptions = {
             from: req.body.email,
