@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 
 function Contact(){
 	const [state, setState] = useState({
@@ -7,8 +8,20 @@ function Contact(){
 		message: ''
 	})
 
+	const [result, setResult] = useState(null)
+
 	function sendEmail(event){
 		event.preventDefault()
+		console.log('clicked')
+		axios
+			.post('/send', {...state})
+			.then(response =>{
+				setResult(response.data)
+				setState({name: '', email: '', message: ''})
+			})
+			.catch(()=>{
+				setResult({success: false, message: 'Something went wrong. Try again later'})
+			})
 	}
 
 	function handleInputChange(event){
@@ -26,8 +39,12 @@ function Contact(){
 			<div className="row" style={{marginTop: "5%"}}>
 				<h1 style={{marginBottom: "3%"}}>Contact Me</h1>
 				<aside className="col col-xl-8">
-					<form onSubmit={sendEmail} className="row g-3" name="contact" //TODO: remove => method="POST" data-netlify="true"
-					>
+					{result && (
+						<p className={`${result.success ? 'success' : 'error'}`}>
+							{result.message}
+						</p>
+					)}
+					<form onSubmit={sendEmail} className="row g-3" name="contact">
 						<div className="col-md-6">
 							<label className="form-label" >Name</label>
 							<input onChange={handleInputChange} type="text" name="name"  value={state.name} className="form-control" />
@@ -40,13 +57,7 @@ function Contact(){
 							<label className="form-label">Message</label>
 							<textarea onChange={handleInputChange} className="form-control" name="message" value={state.message} className="form-control" rows="6"></textarea>
 						</div>
-						<div className="btn-group">
-							<ul className="btn-group">
-								<li>
-									<a type="submit" className="primary btn btn-lg btn-primary">Send</a>
-								</li>
-							</ul>
-						</div>
+						<button type="submit" className="btn btn-lg btn-primary">Send</button>
 					</form>
 				</aside>
 				<aside className="col col-xl-3" id="contactMethod">
